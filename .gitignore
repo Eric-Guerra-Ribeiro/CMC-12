@@ -404,3 +404,12 @@ FodyWeavers.xsd
 *.png
 *.eps
 
+# Matlab
+*.asv
+*.slxc
+eric.ribeiro_lab1/slprj/
+eric.ribeiro_lab2/slprj/
+eric.ribeiro_lab3/slprj/
+eric.ribeiro_lab4/slprj/
+eric.ribeiro_lab5/slprj/
+eric.ribeiro_lab6/slprj/
