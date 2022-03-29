@@ -18,7 +18,7 @@ hold on
 plot(out1.v.time, out1.v.signals.values, '-y', LineWidth=2)
 plot(out2.v.time, out2.v.signals.values, '-b', LineWidth=2)
 plot([0, max(time)], [vr, vr], '--g', LineWidth=2)
-title("Aumento de Massa - Cruise Control")
+title("Aumento de Massa - Malha Aberta")
 xlabel("Tempo (s)")
 ylabel("Velocidade (m/s)")
 legend('Sem Passageiro', 'Com Passageiro')
