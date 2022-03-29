@@ -11,4 +11,3 @@ ylabel("Velocidade (m/s)")
 legend('Simulação', 'Experimento')
 hold off
 print -depsc2 'vel_t.eps'
-
