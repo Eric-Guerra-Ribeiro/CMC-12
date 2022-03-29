@@ -407,6 +407,7 @@ FodyWeavers.xsd
 # Matlab
 *.asv
 *.slxc
+*.r2020b
 eric.ribeiro_lab1/slprj/
 eric.ribeiro_lab2/slprj/
 eric.ribeiro_lab3/slprj/
