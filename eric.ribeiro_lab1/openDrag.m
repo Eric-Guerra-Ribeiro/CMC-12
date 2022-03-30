@@ -18,10 +18,10 @@ hold on
 plot(out1.v.time, out1.v.signals.values, '-y', LineWidth=2)
 plot(out2.v.time, out2.v.signals.values, '-b', LineWidth=2)
 plot([0, max(time)], [vr, vr], '--g', LineWidth=2)
-title("Aerodinâmica - Malha Aberta")
+title("Erro de Modelo - Malha Aberta")
 xlabel("Tempo (s)")
 ylabel("Velocidade (m/s)")
-legend('Mais Aerodinâmico', 'Menos Aerodinâmico')
+legend('Sem erro em b', 'Com erro em b')
 hold off
 
 print -depsc2 'vel_q2e.eps'
