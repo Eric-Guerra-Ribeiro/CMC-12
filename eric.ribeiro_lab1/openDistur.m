@@ -25,7 +25,7 @@ hold on
 plot(out1.v.time, out1.v.signals.values, '-b', LineWidth=2)
 plot(out2.v.time, out2.v.signals.values, '-y', LineWidth=2)
 plot(out3.v.time, out3.v.signals.values, '-g', LineWidth=2)
-plot([0, max(time)], [vr1, vr1], '--k', LineWidth=2)
+plot([0, max(time)], [vr, vr], '--k', LineWidth=2)
 title("Perturbação - Malha Aberta")
 xlabel("Tempo (s)")
 ylabel("Velocidade (m/s)")
