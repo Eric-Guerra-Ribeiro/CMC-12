@@ -400,9 +400,10 @@ FodyWeavers.xsd
 # Zip
 *.zip
 
-# Images
+# Images and Videos
 *.png
 *.eps
+*.avi
 
 # Matlab
 *.asv
