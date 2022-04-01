@@ -18,8 +18,8 @@ ylabel('Y (m)', 'FontSize', 14);
 set(gca, 'FontSize', 14);
 grid minor;
 axis equal;
-print -dpng -r400 followline.png % for Word users
-% print -depsc2 followline.eps % for LaTeX users
+% print -dpng -r400 followline.png % for Word users
+print -depsc2 followline.eps % for LaTeX users
 
 %% Testes com robo se movendo para tras
 xr = -1;
@@ -35,5 +35,5 @@ ylabel('Y (m)', 'FontSize', 14);
 set(gca, 'FontSize', 14);
 grid minor;
 axis equal;
-print -dpng -r400 followline.png % for Word users
-% print -depsc2 followline.eps % for LaTeX users
+% print -dpng -r400 followline.png % for Word users
+print -depsc2 followline.eps % for LaTeX users
