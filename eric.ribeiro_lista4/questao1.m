@@ -5,5 +5,5 @@ function f = questao1()
 % https://www.mathworks.com/help/matlab/matlab_prog/anonymous-functions.html
 
 % f = @(t) ...
-
+f = @(t) (2*t+1)*exp(-t) - exp(-2*t);
 end

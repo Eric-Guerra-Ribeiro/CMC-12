@@ -5,5 +5,5 @@ function x = questao2()
 % https://www.mathworks.com/help/matlab/matlab_prog/anonymous-functions.html
 
 % x = @(t) ...
-
+x = @(t) 1 + exp(-3*t)*sin(3*t);
 end

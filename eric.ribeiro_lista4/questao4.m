@@ -6,6 +6,9 @@ function x = questao4(m, b, Kp, Kv, t)
 % da funcao eh x = [x0, x1, ..., xf]^T, que contem as posicoes do carro nos
 % instantes de tempo considerados em t.
 
-
+u = @(t) t;
+s = tf('s');
+G = Kp*Kv/(m*s^2 + (b + Kv)*s + Kp*Kv);
+x = lsim(G, u(t), t);
 
 end
