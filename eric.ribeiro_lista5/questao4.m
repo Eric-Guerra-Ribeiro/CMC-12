@@ -9,6 +9,6 @@ wn = 2 * pi * 2;
 xi = 0.6;
 s = tf('s');
 
-
-
+F = 1/(((2*xi*wn - b/m)/wn^2)*s + 1);
+C = (2*m*xi*wn - b)*s + m*wn^2;
 end
