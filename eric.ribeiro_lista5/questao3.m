@@ -3,5 +3,5 @@ function [Kp, Ki] = questao3(wn, xi, L, R)
 % do sistema em:
 % p12 = -xi * wn +- wn * sqrt(1 - xi^2).
 Kp = 2*xi*wn*L - R;
-Ki = wn*L;
+Ki = wn^2*L;
 end
