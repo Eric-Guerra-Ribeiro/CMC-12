@@ -3,5 +3,5 @@ function erroRegime = questao2(m, b, Kp, Ki)
 % de cruise control com controlador PI.
 
 % erroRegime = ...
-
+erroRegime = -1/Ki;
 end

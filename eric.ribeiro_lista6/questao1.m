@@ -5,5 +5,7 @@ function limites = questao1()
 % a = ...;
 % b = ...;
 % limites = [a, b];
-
+a = -4.8;
+b = 42;
+limites = [a, b];
 end
