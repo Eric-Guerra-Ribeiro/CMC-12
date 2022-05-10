@@ -13,7 +13,7 @@ C = 1e-6;
 
 xi = sqrt(1/(1 + (pi/log(Mp))^2));
 wn = (pi - acos(xi))/(tr*sqrt(1-xi^2));
-Kp = R*(2*xi*wn - 1/C);
+Kp = 2*R*xi*wn - 1/C;
 Ki = R*wn^2;
 
 end

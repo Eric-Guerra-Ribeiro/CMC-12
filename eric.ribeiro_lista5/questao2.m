@@ -7,10 +7,11 @@ T = (0:1e-3:10*T_0(end));
 Y = step(sys, T);
 
 y_s = Y(end);
+
 for i=length(T):-1:1
     if abs((Y(i) - y_s)/y_s) > perc
-        ts = T(i);
         break
     end
+    ts = T(i);
 end
 end
