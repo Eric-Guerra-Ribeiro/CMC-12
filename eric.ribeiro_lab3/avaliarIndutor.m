@@ -29,6 +29,7 @@ for i=1:length(Ls)
     legs{i} = sprintf('L=%f H', Ls(i));
 end
 legend(legs, 'FontSize', 14, 'Location', 'Southeast');
+print -depsc2 indutor_simulacao.eps % para usuarios de LaTeX
 
 %% Tracando graficos das posicoes dos polos
 
@@ -47,3 +48,4 @@ for i=1:length(Ls)
     legs{i} = sprintf('L=%f H', Ls(i));
 end
 legend(legs, 'FontSize', 14, 'Location', 'Southwest');
+print -depsc2 indutor_polos.eps % para usuarios de LaTeX

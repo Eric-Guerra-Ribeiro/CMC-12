@@ -33,6 +33,8 @@ end
 %% Tracando graficos das posicoes dos polos
 
 legend(legs, 'FontSize', 14, 'Location', 'Southeast');
+
+print -depsc2 tr_simulacao.eps % para usuarios de LaTeX
 figure;
 hold on;
 grid on;
@@ -48,3 +50,4 @@ for i=1:length(trs)
     legs{i} = sprintf('t_r=%.4f s', trs(i));
 end
 legend(legs, 'FontSize', 14, 'Location', 'Southwest');
+print -depsc2 tr_polos.eps % para usuarios de LaTeX

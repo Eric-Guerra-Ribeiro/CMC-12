@@ -26,7 +26,7 @@ Jeq = planta.Jeq;
 Beq = planta.Beq;
 Kt = planta.Kt;
 
-GR = 1 / (s + 1); % Alterar para expressao correta de GR
+GR = Kt*Ki / (s*(L*s + R)*(Jeq*s + Beq) + Kt*(Kp+Kt)*s + Kt*Ki);
 polos = pole(GR);
 
 end
