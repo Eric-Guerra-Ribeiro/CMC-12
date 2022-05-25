@@ -27,4 +27,6 @@ ylabel('Z (m)', 'FontSize', 14);
 set(gca, 'FontSize', 14);
 legend('Analitico', 'Iterativo', 'FontSize', 14, 'Location', 'Southeast');
 
+print -depsc2 malha_vertical.eps
+
 end

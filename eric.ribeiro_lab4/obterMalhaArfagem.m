@@ -10,7 +10,8 @@ function dinamica = obterMalhaArfagem(controlador, planta)
 % planta.g: aceleracao da gravidade.
 % A saida dinamica eh a dinamica da malha horizontal na forma de funcao de
 % transferencia.
-
-% dinamica = ...;
+s = tf('s');
+dinamica = (controlador.Kp*controlador.Kv/planta.J) ...
+           /(s^2+(controlador.Kv/planta.J)*s + (controlador.Kp*controlador.Kv/planta.J));
 
 end

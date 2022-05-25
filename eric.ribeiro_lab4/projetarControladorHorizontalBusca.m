@@ -29,8 +29,26 @@ Mps = linspace(0.8 * requisitosX.Mp, 1.2 * requisitosX.Mp, N);
 % Iterar sobre a grade de trs e Mps para determinar o par tr e Mp que
 % melhor atende aos requisitos
 
-% controlador.Kp = ...;
-% controlador.Ki = ...;
-% controlador.Kd = ...;
+J = inf;
+for i=1:N
+    for j=1:N
+        requisitoX.tr = trs(i);
+        requisitoX.Mp = Mps(j);
+        sys = obterMalhaHorizontal(projetarControladorHorizontalAnalitico(requisitoX, planta), projetarControladorArfagem(requisitosTheta, planta), planta);
+        simInfo = stepinfo(sys, 'RiseTimeLimits', [0, 1]);
+        Jij = (abs((requisitosX.tr - simInfo.RiseTime)/requisitosX.tr) ...
+               + abs((requisitosX.Mp - simInfo.Overshoot/100)/requisitosX.Mp));
+        if J > Jij
+            J = Jij;
+            tr = requisitoX.tr;
+            Mp = requisitoX.Mp;
+        end
+    end
+end
+
+requisitoX.tr = tr;
+requisitoX.Mp = Mp;
+
+controlador = projetarControladorHorizontalAnalitico(requisitoX, planta);
 
 end

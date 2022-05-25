@@ -13,6 +13,11 @@ function dinamica = obterMalhaHorizontal(controladorX, controladorTheta, planta)
 % A saida dinamica eh a dinamica da malha horizontal na forma de funcao de
 % transferencia.
 
-% dinamica = ...;
+sysGfTheta = obterMalhaArfagem(controladorTheta, planta);
+
+s = tf('s');
+
+%prefiltro = controladorX.Ki/(controladorX.Kd*s^2 + controladorX.Kp*s + controladorX.Ki);
+dinamica = controladorX.Ki/((1/planta.g)*s^3 + sysGfTheta*(controladorX.Kd*s^2 + controladorX.Kp*s + controladorX.Ki));
 
 end

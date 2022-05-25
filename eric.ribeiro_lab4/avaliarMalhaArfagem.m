@@ -22,4 +22,6 @@ xlabel('Tempo (s)', 'FontSize', 14);
 ylabel('\theta (rad)', 'FontSize', 14);
 set(gca, 'FontSize', 14);
 
+print -depsc2 malha_arfagem.eps
+
 end

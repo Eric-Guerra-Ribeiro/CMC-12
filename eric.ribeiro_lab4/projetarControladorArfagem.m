@@ -14,7 +14,10 @@ function controlador = projetarControladorArfagem(requisitos, planta)
 % controlador.Kp: ganho proporcional.
 % controlador.Kv: ganho de velocidade.
 
-% controlador.Kv = ...;
-% controlador.Kp = ...;
+xi = 1/sqrt((pi/log(requisitos.Mp))^2+1);
+wn = (pi - acos(xi))/(requisitos.tr*sqrt(1 - xi^2));
+
+controlador.Kv = 2*planta.J*xi*wn;
+controlador.Kp = wn/(2*xi);
 
 end

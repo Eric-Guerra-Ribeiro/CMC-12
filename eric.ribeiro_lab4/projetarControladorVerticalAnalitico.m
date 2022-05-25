@@ -15,8 +15,11 @@ function controlador = projetarControladorVerticalAnalitico(requisitos, planta)
 % controlador.Ki: ganho integrativo.
 % controlador.Kd: ganho derivativo.
 
-% controlador.Kd = ...
-% controlador.Kp = ...
-% controlador.Ki = ...
+xi = 1/sqrt((pi/log(requisitos.Mp))^2 + 1);
+wn = (pi - acos(xi))/(requisitos.tr*sqrt(1 - xi^2));
+
+controlador.Kd = 7*planta.m*xi*wn;
+controlador.Kp = planta.m*(10*xi^2 + 1)*wn^2;
+controlador.Ki = 5*planta.m*xi*wn^3;
 
 end
