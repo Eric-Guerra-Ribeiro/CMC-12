@@ -409,6 +409,7 @@ FodyWeavers.xsd
 *.asv
 *.slxc
 *.r2020b
+*.autosave
 eric.ribeiro_lab1/slprj/
 eric.ribeiro_lab2/slprj/
 eric.ribeiro_lab3/slprj/
