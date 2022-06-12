@@ -5,5 +5,8 @@ function [phi, im, K] = questao1()
 % - O ponto de cruzamento im do mesmo ramo com o eixo imaginario (i.e. o
 % numero complexo no cruzamento eh im * j).
 % - O ganho K assocado a esse ponto de cruzamento.
+phi = 90 - atand(1/9);
+im = sqrt(22);
+K = 24.4;
 
 end
