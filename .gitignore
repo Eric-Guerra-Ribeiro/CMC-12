@@ -405,6 +405,7 @@ FodyWeavers.xsd
 *.eps
 *.avi
 
+
 # Matlab
 *.asv
 *.slxc
@@ -417,3 +418,6 @@ eric.ribeiro_lab4/slprj/
 eric.ribeiro_lab5/slprj/
 eric.ribeiro_lab6/slprj/
 matlab.mat
+!eric.ribeiro_lista7/questao5.png
+!eric.ribeiro_lista9/questao3.png
+
