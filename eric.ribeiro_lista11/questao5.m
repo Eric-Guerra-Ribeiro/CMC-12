@@ -11,5 +11,6 @@ function u = questao5(wn, xi, T, ua, uaa, e, ea, eaa)
 % ea: e[k-1].
 % eaa: e[k-2].
 % u: u[k].
-
+u = ((T*wn)^2 * (e + 2*ea + eaa) + 2*(4 - (T*wn)^2)*ua + (4*xi*T*wn - 4 - (T*wn)^2)*uaa) ...
+    /(4 + 4*xi*T*wn + (T*wn)^2);
 end
